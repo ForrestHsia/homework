@@ -81,6 +81,7 @@ class OperationFactory{
     }
 }
 
+// 客戶端調用
 o = "/"
 a = new OperationFactory(o)
 cal = a.createOperate()

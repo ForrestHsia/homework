@@ -77,8 +77,6 @@ class Reality1{
     }
 }
 
-
-
 class Fund{
 
     fundInit(){
