@@ -131,8 +131,8 @@ fund = temp.fundInit()
 
 // fund是將所有操作項目初始化後，要開始操作的基金
 // 視操作需求調用所需之function
-fund.fundSell1
-fund.fundBuy111
+fund.fundSell1()
+fund.fundBuy111()
 
-fund.fundBuy21
+fund.fundBuy21()
 
