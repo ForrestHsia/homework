@@ -13,51 +13,54 @@ class Operation{
 
 class OpeAdd extends Operation{
     
-    static calculate(numberA,numberB){
-        caculateResult = numberA+numberB;
-        return caculateResult;
+    calculate(){
+        let calculateResult = 0
+        calculateResult = this.numberA+this.numberB;
+        return calculateResult;
     }
 
 }
 
 class OpeMin extends Operation{
-
-    static calculate(numberA,numberB){
-        caculateResult = numberA-numberB;
-        return caculateResult;
+    
+    calculate(){
+        let calculateResult = 0
+        calculateResult = this.numberA-this.numberB;
+        return calculateResult;
     }
-
 }
 
 class OpeMul extends Operation{
 
-    static calculate(a,b){
-        caculateResult = this.numberA*b
-        return caculateResult;
+    calculate(){
+        let calculateResult = 0
+        calculateResult = this.numberA*this.numberB;
+        return calculateResult;
     }
 
 }
 
 class OpeDiv extends Operation{
 
-    static calculate(){
+    calculate(){
+        let calculateResult = 0
         if(this.numberB === 0){
             result = "undefined";
-            return caculateResult;
+            return calculateResult;
         } 
-        caculateResult = this.numberA / this.numberB;
-        return caculateResult;
+        calculateResult = this.numberA / this.numberB;
+        return calculateResult;
     }
 
 }
 
 class OperationFactory{
-
-    static createOperate(operator){
-
+    constructor(operator){
+        this.operator = operator;
+    }
+    createOperate(){
         let oper = null;
-
-        switch(operator){
+        switch(this.operator){
             case "+":
                 oper = new OpeAdd();
                 break;
@@ -78,10 +81,11 @@ class OperationFactory{
     }
 }
 
-o = "-"
-calculation = OperationFactory.createOperate(o)
-calculation.numberA=1
-calculation.numberB=2
-console.log(calculation)
-result = calculation.caculate()
+o = "/"
+a = new OperationFactory(o)
+cal = a.createOperate()
+cal.numberA=0.1
+cal.numberB=0
+
+result = cal.calculate()
 console.log(result)
