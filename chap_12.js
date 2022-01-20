@@ -116,7 +116,7 @@ class Fund{
         s1.sell()
     }
 
-    fundSell12_1(){
+    fundSell121(){
         s1.sell()
         s2.sell()
         d1.sell()
