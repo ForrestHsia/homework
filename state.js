@@ -111,5 +111,6 @@ work.writeProgram();
 
 // 如果我在17:00以前完成工作的話程式會包掉
 // 因為我沒有從一開始的ForenoonState接下去，work會找不到RestState
+// 變更模式來進行？或者是在現在的架構下加邏輯？
 work.Hour = 14;
 work.writeProgram();
