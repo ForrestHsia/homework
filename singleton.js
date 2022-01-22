@@ -17,6 +17,8 @@ let Single = function(){
         this.s = "public";
         Single.cache = this;
 };
+
+
 let s1 = new Single();
 let s2 = new Single();
 console.log(s1 === s2);
