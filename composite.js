@@ -38,7 +38,7 @@ class ConcreteCompany extends Company{
     }
 
     lineOfDuty(){
-        console.log("-", this.name)
+        console.log("-", this.name);
         for(let i=0; i<this.children.length;i++){
             if(this.children[i] != null && this.children[i] != ""){
                 this.children[i].lineOfDuty();
@@ -110,7 +110,7 @@ headQuarter.attach(KHoffice);
 console.log("結構圖\n");
 headQuarter.display();
 
-console.log("\n\n\n技能樹\n");
+console.log("\n\n技能樹\n");
 headQuarter.lineOfDuty();
 
 headQuarter.detach(NYoffice);
@@ -118,6 +118,6 @@ headQuarter.detach(NYoffice);
 console.log("結構圖\n");
 headQuarter.display();
 
-console.log("\n\n\n技能樹\n");
+console.log("\n\n技能樹\n");
 headQuarter.lineOfDuty();
 

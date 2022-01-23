@@ -1,4 +1,4 @@
-// 工廠模式
+// 工廠模式 factory(??)
 
 class RootFactory{
     constructor(){
@@ -67,5 +67,9 @@ socialWorkerFactory = new SocialWorkerFactory;
 student1 = studentFacory.createNightingale("小美眉");
 socialworker1 = socialWorkerFactory.createNightingale("美眉"); 
 
-console.log(student1)
-console.log(socialworker1)
+console.log(student1);
+console.log(socialworker1);
+
+student1.sweep();
+socialworker1.lundry();
+socialworker1.cook();
