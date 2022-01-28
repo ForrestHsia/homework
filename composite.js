@@ -3,9 +3,6 @@
 class Company{
     constructor(name){
         this.name = name;
-
-        let tempDisplay  = "-";
-        this.tempDisplay = tempDisplay;
     }
 
     attach(company){};
@@ -20,7 +17,6 @@ class ConcreteCompany extends Company{
         let children = [];
         this.children = children;
         this.name = name;
-        this.depth = depth;
     }
 
     attach(company){
@@ -32,11 +28,12 @@ class ConcreteCompany extends Company{
         delete this.children[temp];
     }
 
-    display(){
-        console.log(this.tempDisplay, this.name);
+    display(depth){
+        let tempDisplay = "-";
+        console.log(tempDisplay.repeat(depth), this.name);
         for(let i=0; i<this.children.length;i++){
             if(this.children[i] != null && this.children[i] != ""){
-                this.children[i].display();
+                this.children[i].display(depth+2);
             }
         }
     }
@@ -62,8 +59,9 @@ class HRDepartment extends Company{
 
     detach(company){};
 
-    display(){
-        console.log(this.tempDisplay, this.name);
+    display(depth){
+        let tempDisplay = "-";
+        console.log(tempDisplay.repeat(depth), this.name);
     }
 
     lineOfDuty(){
@@ -83,7 +81,8 @@ class FinDepartment extends Company{
     detach(company){};
 
     display(depth){
-        console.log(this.tempDisplay, this.name);
+        let tempDisplay = "-";
+        console.log(tempDisplay.repeat(depth), this.name);
     }
 
     lineOfDuty(){
@@ -93,30 +92,26 @@ class FinDepartment extends Company{
 
 // 客戶端
 headQuarter = new ConcreteCompany("北京總公司");
-headQuarter.depth = 1
 headQuarter.attach(new HRDepartment("北京總公司人資部"));
 headQuarter.attach(new FinDepartment("北京總公司財務部"));
 
 NYoffice = new ConcreteCompany("紐約分公司");
-NYoffice.depth = 3
 NYoffice.attach(new HRDepartment("紐約分公司人資部"));
 NYoffice.attach(new FinDepartment("紐約分公司財務部"));
 headQuarter.attach(NYoffice);
 
 NJoffice = new ConcreteCompany("南京辦事處");
-NJoffice.depth = 5
 NJoffice.attach(new HRDepartment("南京辦事處人資部"));
 NJoffice.attach(new FinDepartment("南京辦事處財務部"));
 headQuarter.attach(NJoffice);
 
 KHoffice = new ConcreteCompany("高雄辦事處");
-KHoffice.depth = 5
 KHoffice.attach(new HRDepartment("高雄辦事處人資部"));
 KHoffice.attach(new FinDepartment("高雄辦事處財務部"));
 headQuarter.attach(KHoffice);
 
 console.log("結構圖\n");
-headQuarter.display();
+headQuarter.display(1);
 
-console.log("\n\n技能樹\n");
-headQuarter.lineOfDuty();
+// console.log("\n\n技能樹\n");
+// headQuarter.lineOfDuty();
