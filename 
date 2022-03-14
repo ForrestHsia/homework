@@ -1,0 +1,71 @@
+[33mcommit b714e7022452556aba8ddac9afe224a2a10ae948[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mmaster/master[m[33m)[m
+Author: ForrestHsia <forresthsia@gmail.com>
+Date:   Fri Jan 28 23:16:06 2022 +0800
+
+    Update composite.js
+
+[33mcommit b71920aa71a5ea20d227174a0aad9f3b059c355a[m
+Author: ForrestHsia <forresthsia@gmail.com>
+Date:   Sun Jan 23 17:44:47 2022 +0800
+
+    修正composite階級顯示，尚未完成
+
+[33mcommit 79b7110def2cceb202149477db6c5addfd6678db[m
+Author: ForrestHsia <forresthsia@gmail.com>
+Date:   Sun Jan 23 15:26:49 2022 +0800
+
+    修改檔名
+
+[33mcommit 45c317beb219562ef7fa403dd72bab7245d7e9a9[m
+Author: ForrestHsia <forresthsia@gmail.com>
+Date:   Sun Jan 23 01:01:09 2022 +0800
+
+    新增如附檔案
+
+[33mcommit a77daa03e56d6e6c15f57b9593997251a039179e[m
+Author: ForrestHsia <forresthsia@gmail.com>
+Date:   Sat Jan 22 00:17:03 2022 +0800
+
+    singleton模式補完，其他更名
+
+[33mcommit 401311227c9ddecdd81b7362c56bd49c1999d5ce[m
+Author: ForrestHsia <forresthsia@gmail.com>
+Date:   Fri Jan 21 20:14:18 2022 +0800
+
+    新增如上檔案
+
+[33mcommit 9f87c734c451cb1d97a0ac849fde2ccb78945251[m
+Author: ForrestHsia <forresthsia@gmail.com>
+Date:   Fri Jan 21 07:11:53 2022 +0800
+
+    chap_14 更新
+
+[33mcommit 6f02adfc67e707fabce601548e8c61b54826db19[m
+Author: ForrestHsia <forresthsia@gmail.com>
+Date:   Thu Jan 20 22:15:07 2022 +0800
+
+    chap_12 跟 chap_13 上傳
+
+[33mcommit a361287eca21c944ed2760d2cb915aa8bb62a658[m
+Author: ForrestHsia <forresthsia@gmail.com>
+Date:   Thu Jan 20 01:21:48 2022 +0800
+
+    chap_1跟chap_12微調，chap_13新增
+
+[33mcommit e63140a7aeb2ec93b39290cbc895894b807c4fbb[m
+Author: ForrestHsia <forresthsia@gmail.com>
+Date:   Thu Jan 20 00:51:47 2022 +0800
+
+    外觀模式微調細節
+
+[33mcommit 21f529f972f75480e9ae2519ab3e1c8976df8328[m
+Author: ForrestHsia <forresthsia@gmail.com>
+Date:   Thu Jan 20 00:38:06 2022 +0800
+
+    簡單工廠與外觀模式補上
+
+[33mcommit b957c5d769a88ff90dc0244a9c49c0a2ffb86ff5[m
+Author: ForrestHsia <forresthsia@gmail.com>
+Date:   Wed Jan 19 22:15:19 2022 +0800
+
+    init status
